@@ -4,7 +4,7 @@ const mongoose = require('mongoose'),
         app
         .use(express.json())
         .use(require("multer")().array())
-        .use(express.urlencoded({extended: false}))
+        .use(express.urlencoded({extended: false}))   
         .set('port', port)
         .set("views", directory)
         .set("view engine", view_engine)
